@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_ui_directors",
+  "info": {
+    "displayName": "Director",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "position": {
+      "type": "string"
+    },
+    "full_name": {
+      "type": "string"
+    },
+    "number": {
+      "type": "string"
+    },
+    "reception_schedule": {
+      "type": "string"
+    },
+    "photo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
