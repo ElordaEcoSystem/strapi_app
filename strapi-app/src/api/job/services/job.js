@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * nav-item service
+ * job service
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::nav-item.nav-item');
+module.exports = createCoreService('api::job.job');

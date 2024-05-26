@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_ui_documents",
+  "info": {
+    "displayName": "document",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "item_document": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    }
+  }
+}

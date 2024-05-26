@@ -853,6 +853,121 @@ export interface ApiAboutAbout extends Schema.CollectionType {
   };
 }
 
+export interface ApiAntikorAntikor extends Schema.CollectionType {
+  collectionName: 'antikors';
+  info: {
+    singularName: 'antikor';
+    pluralName: 'antikors';
+    displayName: ' Antikor';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    title: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    document: Attribute.Component<'ui.document', true> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::antikor.antikor',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::antikor.antikor',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::antikor.antikor',
+      'oneToMany',
+      'api::antikor.antikor'
+    >;
+    locale: Attribute.String;
+  };
+}
+
+export interface ApiBlogBlog extends Schema.CollectionType {
+  collectionName: 'blogs';
+  info: {
+    singularName: 'blog';
+    pluralName: 'blogs';
+    displayName: 'Blog';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    title: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    thumbnail: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
+    description: Attribute.Text &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    date_of_publication: Attribute.Date &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
+    content: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::blog.blog', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::blog.blog', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::blog.blog',
+      'oneToMany',
+      'api::blog.blog'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiFooterFooter extends Schema.CollectionType {
   collectionName: 'footers';
   info: {
@@ -936,6 +1051,62 @@ export interface ApiFooterFooter extends Schema.CollectionType {
   };
 }
 
+export interface ApiJobJob extends Schema.CollectionType {
+  collectionName: 'jobs';
+  info: {
+    singularName: 'job';
+    pluralName: 'jobs';
+    displayName: 'Job';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    title: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    info: Attribute.Blocks &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    sub_title: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    job_openings: Attribute.Blocks &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::job.job', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::job.job', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::job.job',
+      'oneToMany',
+      'api::job.job'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiMainPageMainPage extends Schema.CollectionType {
   collectionName: 'main_pages';
   info: {
@@ -953,12 +1124,6 @@ export interface ApiMainPageMainPage extends Schema.CollectionType {
     };
   };
   attributes: {
-    title: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     description: Attribute.Text &
       Attribute.SetPluginOptions<{
         i18n: {
@@ -966,6 +1131,24 @@ export interface ApiMainPageMainPage extends Schema.CollectionType {
         };
       }>;
     button: Attribute.Component<'ui.button', true> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    title: Attribute.Blocks &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    news_title: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    news_button: Attribute.Component<'ui.button', true> &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -995,12 +1178,12 @@ export interface ApiMainPageMainPage extends Schema.CollectionType {
   };
 }
 
-export interface ApiNavItemNavItem extends Schema.CollectionType {
-  collectionName: 'nav_items';
+export interface ApiNavNav extends Schema.CollectionType {
+  collectionName: 'navs';
   info: {
-    singularName: 'nav-item';
-    pluralName: 'nav-items';
-    displayName: 'Nav_item';
+    singularName: 'nav';
+    pluralName: 'navs';
+    displayName: 'Nav';
   };
   options: {
     draftAndPublish: true;
@@ -1011,13 +1194,58 @@ export interface ApiNavItemNavItem extends Schema.CollectionType {
     };
   };
   attributes: {
+    title: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     link: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: false;
         };
       }>;
-    nav_one: Attribute.String &
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::nav.nav', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::nav.nav', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::nav.nav',
+      'oneToMany',
+      'api::nav.nav'
+    >;
+    locale: Attribute.String;
+  };
+}
+
+export interface ApiProcurementProcurement extends Schema.CollectionType {
+  collectionName: 'procurements';
+  info: {
+    singularName: 'procurement';
+    pluralName: 'procurements';
+    displayName: 'Procurement';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    title: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    document_2: Attribute.Component<'ui.document', true> &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1027,21 +1255,65 @@ export interface ApiNavItemNavItem extends Schema.CollectionType {
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
-      'api::nav-item.nav-item',
+      'api::procurement.procurement',
       'oneToOne',
       'admin::user'
     > &
       Attribute.Private;
     updatedBy: Attribute.Relation<
-      'api::nav-item.nav-item',
+      'api::procurement.procurement',
       'oneToOne',
       'admin::user'
     > &
       Attribute.Private;
     localizations: Attribute.Relation<
-      'api::nav-item.nav-item',
+      'api::procurement.procurement',
       'oneToMany',
-      'api::nav-item.nav-item'
+      'api::procurement.procurement'
+    >;
+    locale: Attribute.String;
+  };
+}
+
+export interface ApiPtoPto extends Schema.CollectionType {
+  collectionName: 'ptos';
+  info: {
+    singularName: 'pto';
+    pluralName: 'ptos';
+    displayName: 'Pto';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    title: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    text: Attribute.Blocks &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::pto.pto', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::pto.pto', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::pto.pto',
+      'oneToMany',
+      'api::pto.pto'
     >;
     locale: Attribute.String;
   };
@@ -1066,9 +1338,14 @@ declare module '@strapi/types' {
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'plugin::i18n.locale': PluginI18NLocale;
       'api::about.about': ApiAboutAbout;
+      'api::antikor.antikor': ApiAntikorAntikor;
+      'api::blog.blog': ApiBlogBlog;
       'api::footer.footer': ApiFooterFooter;
+      'api::job.job': ApiJobJob;
       'api::main-page.main-page': ApiMainPageMainPage;
-      'api::nav-item.nav-item': ApiNavItemNavItem;
+      'api::nav.nav': ApiNavNav;
+      'api::procurement.procurement': ApiProcurementProcurement;
+      'api::pto.pto': ApiPtoPto;
     }
   }
 }

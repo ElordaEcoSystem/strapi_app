@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "main_pages",
+  "collectionName": "jobs",
   "info": {
-    "singularName": "main-page",
-    "pluralName": "main-pages",
-    "displayName": "main_page",
-    "description": ""
+    "singularName": "job",
+    "pluralName": "jobs",
+    "displayName": "Job"
   },
   "options": {
     "draftAndPublish": true
@@ -16,33 +15,7 @@
     }
   },
   "attributes": {
-    "description": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "text"
-    },
-    "button": {
-      "type": "component",
-      "repeatable": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "ui.button"
-    },
     "title": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "blocks"
-    },
-    "news_title": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -50,15 +23,29 @@
       },
       "type": "string"
     },
-    "news_button": {
-      "type": "component",
-      "repeatable": true,
+    "info": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "component": "ui.button"
+      "type": "blocks"
+    },
+    "sub_title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "job_openings": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "blocks"
     }
   }
 }

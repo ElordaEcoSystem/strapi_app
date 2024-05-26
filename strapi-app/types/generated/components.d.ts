@@ -23,6 +23,20 @@ export interface UiDirector extends Schema.Component {
     number: Attribute.String;
     reception_schedule: Attribute.String;
     photo: Attribute.Media;
+    title_reception_schedule: Attribute.String;
+    title_number: Attribute.String;
+  };
+}
+
+export interface UiDocument extends Schema.Component {
+  collectionName: 'components_ui_documents';
+  info: {
+    displayName: 'document';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    item_document: Attribute.Media;
   };
 }
 
@@ -42,6 +56,7 @@ declare module '@strapi/types' {
     export interface Components {
       'ui.button': UiButton;
       'ui.director': UiDirector;
+      'ui.document': UiDocument;
       'ui.social': UiSocial;
     }
   }
