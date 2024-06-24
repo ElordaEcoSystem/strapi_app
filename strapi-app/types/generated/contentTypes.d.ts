@@ -912,6 +912,7 @@ export interface ApiBlogBlog extends Schema.CollectionType {
     singularName: 'blog';
     pluralName: 'blogs';
     displayName: 'Blog';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -946,7 +947,19 @@ export interface ApiBlogBlog extends Schema.CollectionType {
           localized: false;
         };
       }>;
-    content: Attribute.Media &
+    video_content: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
+    photo_content: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
+    other: Attribute.Media &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: false;
@@ -1022,6 +1035,12 @@ export interface ApiFooterFooter extends Schema.CollectionType {
         };
       }>;
     item_social: Attribute.Component<'ui.social', true> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    text_for_map: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1222,6 +1241,71 @@ export interface ApiNavNav extends Schema.CollectionType {
   };
 }
 
+export interface ApiPerformItemPerformItem extends Schema.CollectionType {
+  collectionName: 'perform_items';
+  info: {
+    singularName: 'perform-item';
+    pluralName: 'perform-items';
+    displayName: 'Perform_item';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    title: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    unit: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    icon: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
+    number: Attribute.Component<'ui.perform-number', true> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::perform-item.perform-item',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::perform-item.perform-item',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::perform-item.perform-item',
+      'oneToMany',
+      'api::perform-item.perform-item'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiProcurementProcurement extends Schema.CollectionType {
   collectionName: 'procurements';
   info: {
@@ -1344,6 +1428,7 @@ declare module '@strapi/types' {
       'api::job.job': ApiJobJob;
       'api::main-page.main-page': ApiMainPageMainPage;
       'api::nav.nav': ApiNavNav;
+      'api::perform-item.perform-item': ApiPerformItemPerformItem;
       'api::procurement.procurement': ApiProcurementProcurement;
       'api::pto.pto': ApiPtoPto;
     }

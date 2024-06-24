@@ -40,6 +40,18 @@ export interface UiDocument extends Schema.Component {
   };
 }
 
+export interface UiPerformNumber extends Schema.Component {
+  collectionName: 'components_ui_perform_numbers';
+  info: {
+    displayName: 'perform_number';
+    description: '';
+  };
+  attributes: {
+    year: Attribute.String;
+    number: Attribute.Integer;
+  };
+}
+
 export interface UiSocial extends Schema.Component {
   collectionName: 'components_ui_socials';
   info: {
@@ -57,6 +69,7 @@ declare module '@strapi/types' {
       'ui.button': UiButton;
       'ui.director': UiDirector;
       'ui.document': UiDocument;
+      'ui.perform-number': UiPerformNumber;
       'ui.social': UiSocial;
     }
   }
