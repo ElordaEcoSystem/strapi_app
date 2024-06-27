@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_ui_youtube_links",
+  "info": {
+    "displayName": "youtube_link"
+  },
+  "options": {},
+  "attributes": {
+    "src": {
+      "type": "string"
+    }
+  }
+}

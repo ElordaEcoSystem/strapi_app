@@ -63,6 +63,16 @@ export interface UiSocial extends Schema.Component {
   };
 }
 
+export interface UiYoutubeLink extends Schema.Component {
+  collectionName: 'components_ui_youtube_links';
+  info: {
+    displayName: 'youtube_link';
+  };
+  attributes: {
+    src: Attribute.String;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
@@ -71,6 +81,7 @@ declare module '@strapi/types' {
       'ui.document': UiDocument;
       'ui.perform-number': UiPerformNumber;
       'ui.social': UiSocial;
+      'ui.youtube-link': UiYoutubeLink;
     }
   }
 }

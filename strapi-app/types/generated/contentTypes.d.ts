@@ -959,10 +959,10 @@ export interface ApiBlogBlog extends Schema.CollectionType {
           localized: false;
         };
       }>;
-    other: Attribute.Media &
+    youtube_link: Attribute.Component<'ui.youtube-link', true> &
       Attribute.SetPluginOptions<{
         i18n: {
-          localized: false;
+          localized: true;
         };
       }>;
     createdAt: Attribute.DateTime;
