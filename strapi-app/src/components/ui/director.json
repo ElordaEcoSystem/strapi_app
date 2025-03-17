@@ -26,11 +26,8 @@
         "images"
       ]
     },
-    "title_reception_schedule": {
-      "type": "string"
-    },
-    "title_number": {
-      "type": "string"
+    "biography": {
+      "type": "blocks"
     }
   }
 }

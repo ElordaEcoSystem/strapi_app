@@ -23,8 +23,7 @@ export interface UiDirector extends Schema.Component {
     number: Attribute.String;
     reception_schedule: Attribute.String;
     photo: Attribute.Media;
-    title_reception_schedule: Attribute.String;
-    title_number: Attribute.String;
+    biography: Attribute.Blocks;
   };
 }
 
