@@ -39,16 +39,6 @@
         }
       },
       "type": "string"
-    },
-    "director": {
-      "type": "component",
-      "repeatable": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "ui.director"
     }
   }
 }

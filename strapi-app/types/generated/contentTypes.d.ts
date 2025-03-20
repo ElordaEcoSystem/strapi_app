@@ -823,12 +823,6 @@ export interface ApiAboutAbout extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    director: Attribute.Component<'ui.director', true> &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -982,6 +976,83 @@ export interface ApiBlogBlog extends Schema.CollectionType {
       'api::blog.blog',
       'oneToMany',
       'api::blog.blog'
+    >;
+    locale: Attribute.String;
+  };
+}
+
+export interface ApiDirectorListDirectorList extends Schema.CollectionType {
+  collectionName: 'director_lists';
+  info: {
+    singularName: 'director-list';
+    pluralName: 'director-lists';
+    displayName: 'Director-list';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    position: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }> &
+      Attribute.DefaultTo<'test'>;
+    full_name: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    number: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    reception_schedule: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    photo: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
+    biography: Attribute.Blocks &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::director-list.director-list',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::director-list.director-list',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::director-list.director-list',
+      'oneToMany',
+      'api::director-list.director-list'
     >;
     locale: Attribute.String;
   };
@@ -1430,6 +1501,7 @@ declare module '@strapi/types' {
       'api::about.about': ApiAboutAbout;
       'api::antikor.antikor': ApiAntikorAntikor;
       'api::blog.blog': ApiBlogBlog;
+      'api::director-list.director-list': ApiDirectorListDirectorList;
       'api::footer.footer': ApiFooterFooter;
       'api::job.job': ApiJobJob;
       'api::main-page.main-page': ApiMainPageMainPage;
