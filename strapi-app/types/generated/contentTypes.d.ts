@@ -1318,6 +1318,58 @@ export interface ApiNavNav extends Schema.CollectionType {
   };
 }
 
+export interface ApiPaidServicePaidService extends Schema.CollectionType {
+  collectionName: 'paid_services';
+  info: {
+    singularName: 'paid-service';
+    pluralName: 'paid-services';
+    displayName: 'paid_service';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    content: Attribute.Blocks &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    document: Attribute.Component<'ui.document', true> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::paid-service.paid-service',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::paid-service.paid-service',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::paid-service.paid-service',
+      'oneToMany',
+      'api::paid-service.paid-service'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiPerformItemPerformItem extends Schema.CollectionType {
   collectionName: 'perform_items';
   info: {
@@ -1506,6 +1558,7 @@ declare module '@strapi/types' {
       'api::job.job': ApiJobJob;
       'api::main-page.main-page': ApiMainPageMainPage;
       'api::nav.nav': ApiNavNav;
+      'api::paid-service.paid-service': ApiPaidServicePaidService;
       'api::perform-item.perform-item': ApiPerformItemPerformItem;
       'api::procurement.procurement': ApiProcurementProcurement;
       'api::pto.pto': ApiPtoPto;
