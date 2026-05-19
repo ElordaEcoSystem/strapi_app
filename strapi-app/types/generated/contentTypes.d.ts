@@ -876,6 +876,12 @@ export interface ApiAntikorAntikor extends Schema.CollectionType {
           localized: true;
         };
       }>;
+    description_2: Attribute.Blocks &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
