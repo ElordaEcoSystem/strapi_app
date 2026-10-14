@@ -5,12 +5,15 @@ module.exports = ({ env }) => [
   {
     name: "strapi::cors",
     config: {
-      origin: env.array("CORS_ORIGINS", [
-        "https://elordaecosystem.kz",
-        "https://new.elordaecosystem.kz",
-        "https://strapi.elordaecosystem.kz",
-        "http://localhost:3000",
-      ]),
+      // Адрес самого Strapi (PUBLIC_URL) разрешён всегда — с него работает админка
+      origin: [
+        env("PUBLIC_URL", "https://strapi.elordaecosystem.kz"),
+        ...env.array("CORS_ORIGINS", [
+          "https://elordaecosystem.kz",
+          "https://new.elordaecosystem.kz",
+          "http://localhost:3000",
+        ]),
+      ],
     },
   },
   "strapi::poweredBy",
