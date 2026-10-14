@@ -1,20 +1,10 @@
-// module.exports = () => ({
-//   upload: {
-//     config: {
-//       providerOptions: {
-//         sizeLimit: 104857600, // 20MB in bytes
-//       },
-//     },
-//   },
-// });
-
-module.exports = ({ env }) => ({
+module.exports = () => ({
   upload: {
     config: {
-      sizeLimit: 250 * 1024 * 1024, // 256mb in bytes
+      sizeLimit: 250 * 1024 * 1024, // 250 МБ, совпадает с лимитом strapi::body
       providerOptions: {
         localServer: {
-          maxage: 104857600, //300000
+          maxage: 104857600, // кэш загруженных файлов в браузере, мс (~29 ч)
         },
       },
     },

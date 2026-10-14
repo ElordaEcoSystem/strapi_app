@@ -1,56 +1,32 @@
-module.exports = [
+module.exports = ({ env }) => [
   "strapi::logger",
   "strapi::errors",
   "strapi::security",
-  "strapi::cors",
+  {
+    name: "strapi::cors",
+    config: {
+      origin: env.array("CORS_ORIGINS", [
+        "https://elordaecosystem.kz",
+        "https://new.elordaecosystem.kz",
+        "https://strapi.elordaecosystem.kz",
+        "http://localhost:3000",
+      ]),
+    },
+  },
   "strapi::poweredBy",
   "strapi::query",
-  // "strapi::body",
   "strapi::session",
   "strapi::favicon",
   "strapi::public",
   {
     name: "strapi::body",
     config: {
-      formLimit: "256mb", // modify form body
-      jsonLimit: "256mb", // modify JSON body
-      textLimit: "256mb", // modify text body
+      formLimit: "256mb",
+      jsonLimit: "256mb",
+      textLimit: "256mb",
       formidable: {
-        maxFileSize: 250 * 1024 * 1024, // multipart data, modify here limit of uploaded file size
+        maxFileSize: 250 * 1024 * 1024, // максимальный размер загружаемого файла
       },
     },
   },
 ];
-
-
-// module.exports = [
-//   "strapi::logger",
-//   "strapi::errors",
-//   "strapi::security",
-//   {
-//     name: "strapi::cors",
-//     config: {
-//       enabled: true,
-//       origin: [
-//         "https://elordaecosystem.kz",       // твой фронт
-//         "https://strapi.elordaecosystem.kz" // если админка/апи открывается снаружи
-//       ],
-//     },
-//   },
-//   "strapi::poweredBy",
-//   "strapi::query",
-//   "strapi::session",
-//   "strapi::favicon",
-//   "strapi::public",
-//   {
-//     name: "strapi::body",
-//     config: {
-//       formLimit: "256mb",
-//       jsonLimit: "256mb",
-//       textLimit: "256mb",
-//       formidable: {
-//         maxFileSize: 250 * 1024 * 1024,
-//       },
-//     },
-//   },
-// ];
