@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_prices_price_items",
+  "info": {
+    "displayName": "Позиция прайс-листа",
+    "icon": "priceTag",
+    "description": "Цены в тенге. Пустое поле — цена не указывается."
+  },
+  "options": {},
+  "attributes": {
+    "equipment_kk": {
+      "type": "string",
+      "required": true
+    },
+    "equipment_ru": {
+      "type": "string",
+      "required": true
+    },
+    "unit_kk": {
+      "type": "string",
+      "required": true
+    },
+    "unit_ru": {
+      "type": "string",
+      "required": true
+    },
+    "summer_no_vat": {
+      "type": "decimal"
+    },
+    "summer_with_vat": {
+      "type": "decimal"
+    },
+    "winter_no_vat": {
+      "type": "decimal"
+    },
+    "winter_with_vat": {
+      "type": "decimal"
+    }
+  }
+}

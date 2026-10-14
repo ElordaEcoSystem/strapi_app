@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "price_lists",
+  "info": {
+    "singularName": "price-list",
+    "pluralName": "price-lists",
+    "displayName": "Прайс-лист",
+    "description": "Прайс-лист платных услуг. Названия на двух языках, цены вводятся один раз."
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_kk": {
+      "type": "string",
+      "required": true
+    },
+    "title_ru": {
+      "type": "string",
+      "required": true
+    },
+    "categories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "prices.price-category"
+    }
+  }
+}

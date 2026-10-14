@@ -1441,6 +1441,38 @@ export interface ApiPerformItemPerformItem extends Schema.CollectionType {
   };
 }
 
+export interface ApiPriceListPriceList extends Schema.SingleType {
+  collectionName: 'price_lists';
+  info: {
+    singularName: 'price-list';
+    pluralName: 'price-lists';
+    displayName: '\u041F\u0440\u0430\u0439\u0441-\u043B\u0438\u0441\u0442';
+    description: '\u041F\u0440\u0430\u0439\u0441-\u043B\u0438\u0441\u0442 \u043F\u043B\u0430\u0442\u043D\u044B\u0445 \u0443\u0441\u043B\u0443\u0433. \u041D\u0430\u0437\u0432\u0430\u043D\u0438\u044F \u043D\u0430 \u0434\u0432\u0443\u0445 \u044F\u0437\u044B\u043A\u0430\u0445, \u0446\u0435\u043D\u044B \u0432\u0432\u043E\u0434\u044F\u0442\u0441\u044F \u043E\u0434\u0438\u043D \u0440\u0430\u0437.';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    title_kk: Attribute.String & Attribute.Required;
+    title_ru: Attribute.String & Attribute.Required;
+    categories: Attribute.Component<'prices.price-category', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::price-list.price-list',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::price-list.price-list',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiProcurementProcurement extends Schema.CollectionType {
   collectionName: 'procurements';
   info: {
@@ -1566,6 +1598,7 @@ declare module '@strapi/types' {
       'api::nav.nav': ApiNavNav;
       'api::paid-service.paid-service': ApiPaidServicePaidService;
       'api::perform-item.perform-item': ApiPerformItemPerformItem;
+      'api::price-list.price-list': ApiPriceListPriceList;
       'api::procurement.procurement': ApiProcurementProcurement;
       'api::pto.pto': ApiPtoPto;
     }

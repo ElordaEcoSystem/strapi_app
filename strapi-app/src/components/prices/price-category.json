@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_prices_price_categories",
+  "info": {
+    "displayName": "Раздел прайс-листа"
+  },
+  "options": {},
+  "attributes": {
+    "title_kk": {
+      "type": "string",
+      "required": true
+    },
+    "title_ru": {
+      "type": "string",
+      "required": true
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "prices.price-item"
+    }
+  }
+}

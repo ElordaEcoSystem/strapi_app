@@ -1,5 +1,7 @@
 'use strict';
 
+const bootstrapPriceList = require('./bootstrap/price-list');
+
 module.exports = {
   /**
    * An asynchronous register function that runs before
@@ -16,5 +18,7 @@ module.exports = {
    * This gives you an opportunity to set up your data model,
    * run jobs, or perform some special logic.
    */
-  bootstrap(/*{ strapi }*/) {},
+  async bootstrap({ strapi }) {
+    await bootstrapPriceList(strapi);
+  },
 };

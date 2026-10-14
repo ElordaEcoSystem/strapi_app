@@ -1,0 +1,434 @@
+{
+  "title_kk": "2025 жылға арналған прайс-парақ",
+  "title_ru": "Прайс-лист на 2025 год",
+  "categories": [
+    {
+      "title_kk": "Нөсерлі кәріз желілерін тазалау, жуу, булау",
+      "title_ru": "Очистка, промывка, пропарка сетей ливневой канализации",
+      "items": [
+        {
+          "equipment_kk": "Илосос машинасы КО-507",
+          "equipment_ru": "Илососная машина КО-507",
+          "unit_kk": "маш/сағ",
+          "unit_ru": "маш/час",
+          "summer_no_vat": 32657,
+          "summer_with_vat": 36576,
+          "winter_no_vat": 35596,
+          "winter_with_vat": 39867
+        },
+        {
+          "equipment_kk": "Арнаны жуу машинасы КО-512",
+          "equipment_ru": "Каналопромывочная машина КО-512",
+          "unit_kk": "маш/сағ",
+          "unit_ru": "маш/час",
+          "summer_no_vat": 52582,
+          "summer_with_vat": 58892,
+          "winter_no_vat": 55521,
+          "winter_with_vat": 62183
+        },
+        {
+          "equipment_kk": "Арнаны жуу машинасы Camel 1200, VOLVO FM 84 F R",
+          "equipment_ru": "Каналопромывочная машина Camel 1200, VOLVO FM 84 F R",
+          "unit_kk": "маш/сағ",
+          "unit_ru": "маш/час",
+          "summer_no_vat": 100255,
+          "summer_with_vat": 112286,
+          "winter_no_vat": 111226,
+          "winter_with_vat": 124574
+        },
+        {
+          "equipment_kk": "VOLVO FM 84F R вакуумды каналды жуу машинасы",
+          "equipment_ru": "Вакуумно-каналопромывочная машина VOLVO FM 84F R",
+          "unit_kk": "маш/сағ",
+          "unit_ru": "маш/час",
+          "summer_no_vat": 126506,
+          "summer_with_vat": 141687,
+          "winter_no_vat": 152579,
+          "winter_with_vat": 170889
+        },
+        {
+          "equipment_kk": "Бу машина ППУА 1600",
+          "equipment_ru": "Паровая машина ППУА 1600",
+          "unit_kk": "маш/сағ",
+          "unit_ru": "маш/час",
+          "summer_no_vat": 69065,
+          "summer_with_vat": 77353,
+          "winter_no_vat": 81760,
+          "winter_with_vat": 91572
+        }
+      ]
+    },
+    {
+      "title_kk": "Топырақ, жаңбыр, еріген және тұрмыстық ағындарды суларды айдау, сорғу / Септиктерді сорғу",
+      "title_ru": "Откачка, перекачка грунтовых, дождевых, талых и бытовых стоков / Откачка септиков",
+      "items": [
+        {
+          "equipment_kk": "Вакуумдық машина КО-505",
+          "equipment_ru": "Вакуумная машина КО-505",
+          "unit_kk": "маш/сағ",
+          "unit_ru": "маш/час",
+          "summer_no_vat": 23533,
+          "summer_with_vat": 26357,
+          "winter_no_vat": 28392,
+          "winter_with_vat": 31799
+        },
+        {
+          "equipment_kk": "Мотопомпа SP-100 өнімділігі 80-100 м3/сағ",
+          "equipment_ru": "Мотопомпа SP-100 производительностью 80-100 м3/ч",
+          "unit_kk": "маш/сағ",
+          "unit_ru": "маш/час",
+          "summer_no_vat": 13466,
+          "summer_with_vat": 15081,
+          "winter_no_vat": 13466,
+          "winter_with_vat": 15081
+        },
+        {
+          "equipment_kk": "Мотопомпа SP-100 өнімділігі 80-100 м3/сағ (ДО есепке алынбайды)",
+          "equipment_ru": "Мотопомпа SP-100 производительностью 80-100 м3/ч (без учета ДТ)",
+          "unit_kk": "маш/сағ",
+          "unit_ru": "маш/час",
+          "summer_no_vat": 11681,
+          "summer_with_vat": 13082,
+          "winter_no_vat": 11681,
+          "winter_with_vat": 13082
+        },
+        {
+          "equipment_kk": "Ортатепкiш сорғы, өнімділігі 300 м3/сағ",
+          "equipment_ru": "Насос центробежный производительностью 300 м3/час",
+          "unit_kk": "маш/сағ",
+          "unit_ru": "маш/час",
+          "summer_no_vat": 16679,
+          "summer_with_vat": 18680,
+          "winter_no_vat": 18077,
+          "winter_with_vat": 20246
+        },
+        {
+          "equipment_kk": "Ортатепкiш сорғы, өнімділігі 300 м3/сағ (ДО есепке алынбайды)",
+          "equipment_ru": "Насос центробежный производительностью 300 м3/час (без учета ДТ)",
+          "unit_kk": "маш/сағ",
+          "unit_ru": "маш/час",
+          "summer_no_vat": 12909,
+          "summer_with_vat": 14458,
+          "winter_no_vat": 12909,
+          "winter_with_vat": 14458
+        },
+        {
+          "equipment_kk": "Ортатепкiш сорғы, өнімділігі 625 м3/сағ",
+          "equipment_ru": "Насос центробежный производительностью 625 м3/час",
+          "unit_kk": "маш/сағ",
+          "unit_ru": "маш/час",
+          "summer_no_vat": 29537,
+          "summer_with_vat": 33082,
+          "winter_no_vat": 34096,
+          "winter_with_vat": 38188
+        },
+        {
+          "equipment_kk": "Ортатепкiш сорғы, өнімділігі 625 м3/сағ (ДО есепке алынбайды)",
+          "equipment_ru": "Насос центробежный производительностью 625 м3/час (без учета ДТ)",
+          "unit_kk": "маш/сағ",
+          "unit_ru": "маш/час",
+          "summer_no_vat": 15648,
+          "summer_with_vat": 17526,
+          "winter_no_vat": 15648,
+          "winter_with_vat": 17526
+        },
+        {
+          "equipment_kk": "Жеке тұлғалар үшін септикті айдауға арналған сараланған тариф",
+          "equipment_ru": "Дифференцированный тариф на откачку септика для физических лиц",
+          "unit_kk": "1 м3",
+          "unit_ru": "1 м3",
+          "summer_no_vat": null,
+          "summer_with_vat": 1439,
+          "winter_no_vat": null,
+          "winter_with_vat": 1733
+        },
+        {
+          "equipment_kk": "Заңды тұлғалар үшін септикті айдауға арналған сараланған тариф",
+          "equipment_ru": "Дифференцированный тариф на откачку септика для юридических лиц",
+          "unit_kk": "1 м3",
+          "unit_ru": "1 м3",
+          "summer_no_vat": null,
+          "summer_with_vat": 1871,
+          "winter_no_vat": null,
+          "winter_with_vat": 2245
+        }
+      ]
+    },
+    {
+      "title_kk": "Нөсерлі кәріз желілерін диагностикалау",
+      "title_ru": "Диагностика сетей ливневой канализации",
+      "items": [
+        {
+          "equipment_kk": "Телеинспекциялық кешеннің көмегімен құбырды тексеру",
+          "equipment_ru": "Обследование трубопровода при помощи телеинспекционного комплекса",
+          "unit_kk": "1 қ.м.",
+          "unit_ru": "1 м.п.",
+          "summer_no_vat": 1429,
+          "summer_with_vat": 1600,
+          "winter_no_vat": 1429,
+          "winter_with_vat": 1600
+        }
+      ]
+    },
+    {
+      "title_kk": "Нөсер кәріз желілерін төсеу бойынша құрылыс-монтаж жұмыстары",
+      "title_ru": "Строительно-монтажные работы по прокладке сетей ливневой канализации",
+      "items": [
+        {
+          "equipment_kk": "XCMG XZ-230 d=160mm қондырғысымен ГНБ, материалдардың құнын есепке алмағанда",
+          "equipment_ru": "ГНБ с применением установки XCMG XZ-230 d=160mm, без учета стоимости материалов",
+          "unit_kk": "1 қ.м.",
+          "unit_ru": "1 п.м.",
+          "summer_no_vat": null,
+          "summer_with_vat": 17069,
+          "winter_no_vat": null,
+          "winter_with_vat": 17069
+        },
+        {
+          "equipment_kk": "XCMG XZ-230 d=200mm қондырғысымен ГНБ, материалдардың құнын есепке алмағанда",
+          "equipment_ru": "ГНБ с применением установки XCMG XZ-230 d=200mm, без учета стоимости материалов",
+          "unit_kk": "1 қ.м.",
+          "unit_ru": "1 п.м.",
+          "summer_no_vat": null,
+          "summer_with_vat": 22758,
+          "winter_no_vat": null,
+          "winter_with_vat": 22758
+        },
+        {
+          "equipment_kk": "XCMG XZ-230 d=315mm қондырғысымен ГНБ, материалдардың құнын есепке алмағанда",
+          "equipment_ru": "ГНБ с применением установки XCMG XZ-230 d=315mm, без учета стоимости материалов",
+          "unit_kk": "1 қ.м.",
+          "unit_ru": "1 п.м.",
+          "summer_no_vat": null,
+          "summer_with_vat": 35258,
+          "winter_no_vat": null,
+          "winter_with_vat": 35258
+        },
+        {
+          "equipment_kk": "XCMG XZ-230 d=400mm қондырғысымен ГНБ, материалдардың құнын есепке алмағанда",
+          "equipment_ru": "ГНБ с применением установки XCMG XZ-230 d=400mm, без учета стоимости материалов",
+          "unit_kk": "1 қ.м.",
+          "unit_ru": "1 п.м.",
+          "summer_no_vat": null,
+          "summer_with_vat": 48505,
+          "winter_no_vat": null,
+          "winter_with_vat": 48505
+        },
+        {
+          "equipment_kk": "XCMG XZ-230 d=500mm қондырғысымен ГНБ, материалдардың құнын есепке алмағанда",
+          "equipment_ru": "ГНБ с применением установки XCMG XZ-230 d=500mm, без учета стоимости материалов",
+          "unit_kk": "1 қ.м.",
+          "unit_ru": "1 п.м.",
+          "summer_no_vat": null,
+          "summer_with_vat": 56250,
+          "winter_no_vat": null,
+          "winter_with_vat": 56250
+        },
+        {
+          "equipment_kk": "XCMG XZ-230 d=600mm қондырғысымен ГНБ, материалдардың құнын есепке алмағанда",
+          "equipment_ru": "ГНБ с применением установки XCMG XZ-230 d=600mm, без учета стоимости материалов",
+          "unit_kk": "1 қ.м.",
+          "unit_ru": "1 п.м.",
+          "summer_no_vat": null,
+          "summer_with_vat": 62500,
+          "winter_no_vat": null,
+          "winter_with_vat": 62500
+        },
+        {
+          "equipment_kk": "XCMG XZ-230 d=700mm қондырғысымен ГНБ, материалдардың құнын есепке алмағанда",
+          "equipment_ru": "ГНБ с применением установки XCMG XZ-230 d=700mm, без учета стоимости материалов",
+          "unit_kk": "1 қ.м.",
+          "unit_ru": "1 п.м.",
+          "summer_no_vat": null,
+          "summer_with_vat": 72860,
+          "winter_no_vat": null,
+          "winter_with_vat": 72860
+        },
+        {
+          "equipment_kk": "SDR құбырларын (d=180мм, 200мм, 225мм) түйістіріп дәнекерлеу арқылы ақауларды жою",
+          "equipment_ru": "Устранение неисправностей путем стыковой сварки SDR трубы d=180mm, 200mm, 225mm",
+          "unit_kk": "1 түйіс",
+          "unit_ru": "1 стык",
+          "summer_no_vat": 17623,
+          "summer_with_vat": 19738,
+          "winter_no_vat": null,
+          "winter_with_vat": null
+        },
+        {
+          "equipment_kk": "SDR құбырларын (d=250мм, 280мм) түйістіріп дәнекерлеу арқылы ақауларды жою",
+          "equipment_ru": "Устранение неисправностей путем стыковой сварки SDR трубы d=250mm, 280mm",
+          "unit_kk": "1 түйіс",
+          "unit_ru": "1 стык",
+          "summer_no_vat": 21147,
+          "summer_with_vat": 23685,
+          "winter_no_vat": null,
+          "winter_with_vat": null
+        },
+        {
+          "equipment_kk": "SDR құбырларын (d=315мм, 355мм) түйістіріп дәнекерлеу арқылы ақауларды жою",
+          "equipment_ru": "Устранение неисправностей путем стыковой сварки SDR трубы d=315mm, 355mm",
+          "unit_kk": "1 түйіс",
+          "unit_ru": "1 стык",
+          "summer_no_vat": 28197,
+          "summer_with_vat": 31580,
+          "winter_no_vat": null,
+          "winter_with_vat": null
+        },
+        {
+          "equipment_kk": "SDR құбырларын (d=400мм, 450мм) түйістіріп дәнекерлеу арқылы ақауларды жою",
+          "equipment_ru": "Устранение неисправностей путем стыковой сварки SDR трубы d=400mm, 450mm",
+          "unit_kk": "1 түйіс",
+          "unit_ru": "1 стык",
+          "summer_no_vat": 35246,
+          "summer_with_vat": 39475,
+          "winter_no_vat": null,
+          "winter_with_vat": null
+        }
+      ]
+    },
+    {
+      "title_kk": "Көшелерді санитарлық тазалау және тазалау",
+      "title_ru": "Санитарная очистка и уборка улиц",
+      "items": [
+        {
+          "equipment_kk": "МТЗ 82,1 негізінде Беларусь жинау машинасы",
+          "equipment_ru": "Машина уборочная Беларусь на базе МТЗ 82,1",
+          "unit_kk": "маш/сағ",
+          "unit_ru": "маш/час",
+          "summer_no_vat": 12931,
+          "summer_with_vat": 14482,
+          "winter_no_vat": 15791,
+          "winter_with_vat": 17686
+        },
+        {
+          "equipment_kk": "Коммуналдық МПУУ-1 машинасы",
+          "equipment_ru": "Машина коммунальная МПУУ-1",
+          "unit_kk": "маш/сағ",
+          "unit_ru": "маш/час",
+          "summer_no_vat": 12931,
+          "summer_with_vat": 14482,
+          "winter_no_vat": 15791,
+          "winter_with_vat": 17686
+        }
+      ]
+    },
+    {
+      "title_kk": "Қар шығару",
+      "title_ru": "Вывоз снега",
+      "items": [
+        {
+          "equipment_kk": "Самосвал 14-15т.",
+          "equipment_ru": "Самосвал 14-15т.",
+          "unit_kk": "маш/сағ",
+          "unit_ru": "маш/час",
+          "summer_no_vat": 16003,
+          "summer_with_vat": 17924,
+          "winter_no_vat": 19216,
+          "winter_with_vat": 21522
+        },
+        {
+          "equipment_kk": "Самосвал 20т.",
+          "equipment_ru": "Самосвал 20т.",
+          "unit_kk": "маш/сағ",
+          "unit_ru": "маш/час",
+          "summer_no_vat": 24288,
+          "summer_with_vat": 27202,
+          "winter_no_vat": 28402,
+          "winter_with_vat": 31810
+        }
+      ]
+    },
+    {
+      "title_kk": "Жер жұмыстары",
+      "title_ru": "Земляные работы",
+      "items": [
+        {
+          "equipment_kk": "Экскаватор TLB-825",
+          "equipment_ru": "Экскаватор TLB-825",
+          "unit_kk": "маш/сағ",
+          "unit_ru": "маш/час",
+          "summer_no_vat": 18196,
+          "summer_with_vat": 20379,
+          "winter_no_vat": 21997,
+          "winter_with_vat": 24636
+        },
+        {
+          "equipment_kk": "Экскаватор HT135W6 HTL120-9",
+          "equipment_ru": "Экскаватор HT135W6 HTL120-9",
+          "unit_kk": "маш/сағ",
+          "unit_ru": "маш/час",
+          "summer_no_vat": 25282,
+          "summer_with_vat": 28316,
+          "winter_no_vat": 31160,
+          "winter_with_vat": 34899
+        }
+      ]
+    },
+    {
+      "title_kk": "Басқа мамандырылған техника",
+      "title_ru": "Другая спецтехника",
+      "items": [
+        {
+          "equipment_kk": "Автокран КамАЗ негізінде, жүк көтергіштігі 25 тонна",
+          "equipment_ru": "Автокран грузоподъёмностью 25 тонн на базе КамАЗ",
+          "unit_kk": "маш/сағ",
+          "unit_ru": "маш/час",
+          "summer_no_vat": 43234,
+          "summer_with_vat": 48423,
+          "winter_no_vat": 49661,
+          "winter_with_vat": 55620
+        },
+        {
+          "equipment_kk": "Манипулятор КамАЗ негізінде",
+          "equipment_ru": "Манипулятор на базе КамАЗ",
+          "unit_kk": "маш/сағ",
+          "unit_ru": "маш/час",
+          "summer_no_vat": 39852,
+          "summer_with_vat": 44634,
+          "winter_no_vat": 43770,
+          "winter_with_vat": 49023
+        },
+        {
+          "equipment_kk": "Автобус",
+          "equipment_ru": "Автобус",
+          "unit_kk": "маш/сағ",
+          "unit_ru": "маш/час",
+          "summer_no_vat": 25231,
+          "summer_with_vat": 28258,
+          "winter_no_vat": 31108,
+          "winter_with_vat": 34841
+        },
+        {
+          "equipment_kk": "Микроавтобус",
+          "equipment_ru": "Микроавтобус",
+          "unit_kk": "маш/сағ",
+          "unit_ru": "маш/час",
+          "summer_no_vat": 20958,
+          "summer_with_vat": 23473,
+          "winter_no_vat": 26836,
+          "winter_with_vat": 30056
+        },
+        {
+          "equipment_kk": "Авто-жөндеу шеберханасы",
+          "equipment_ru": "Авто-ремонтная мастерская",
+          "unit_kk": "маш/сағ",
+          "unit_ru": "маш/час",
+          "summer_no_vat": 26809,
+          "summer_with_vat": 30026,
+          "winter_no_vat": 32687,
+          "winter_with_vat": 36609
+        },
+        {
+          "equipment_kk": "Камаз 43253-2010-69 (КДМ)базасындағы аралас жол машинасы",
+          "equipment_ru": "Комбинированная дорожная машина на базе Камаз 43253-2010-69 (КДМ)",
+          "unit_kk": "маш/сағ",
+          "unit_ru": "маш/час",
+          "summer_no_vat": 35534,
+          "summer_with_vat": 39798,
+          "winter_no_vat": 47568,
+          "winter_with_vat": 53276
+        }
+      ]
+    }
+  ]
+}
