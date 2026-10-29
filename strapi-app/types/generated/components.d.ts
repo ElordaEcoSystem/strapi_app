@@ -67,6 +67,14 @@ export interface UiDocument extends Schema.Component {
   attributes: {
     title: Attribute.String;
     item_document: Attribute.Media;
+    year: Attribute.Integer &
+      Attribute.SetMinMax<
+        {
+          min: 1990;
+          max: 2100;
+        },
+        number
+      >;
   };
 }
 

@@ -16,6 +16,11 @@
       "allowedTypes": [
         "files"
       ]
+    },
+    "year": {
+      "type": "integer",
+      "min": 1990,
+      "max": 2100
     }
   }
 }
